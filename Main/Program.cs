@@ -9,7 +9,7 @@ namespace Main
     class Program
     {
         static void Main(string[] args)
-        {
+        { 
             int keuzeS1;
             int keuzeS2;
 
