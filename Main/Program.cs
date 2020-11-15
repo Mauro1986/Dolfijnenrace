@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Main
+namespace Dolfijnenrace
 {
     class Program
     {
@@ -22,10 +18,8 @@ namespace Main
             "Wanneer de dolfijn lucht hapt verhogen de luchteenheden met 15 tot 45.\n\n");
             Console.ReadKey();
           
-
-            while (dolfijn1.Afstand < 200 || dolfijn2.Afstand < 200)
+            while (dolfijn1.Afstand < 120 || dolfijn2.Afstand < 120)
             {
-
                 #region Dolfijn 1
                 Console.ForegroundColor = ConsoleColor.Blue;
                 Console.Write("\nSpeler 1");
@@ -94,16 +88,15 @@ namespace Main
                 }
                 #endregion
 
-
-                if (dolfijn1.Afstand >= 200 && dolfijn2.Afstand < dolfijn1.Afstand)
+                if (dolfijn1.Afstand >= 120 && dolfijn2.Afstand < dolfijn1.Afstand)
                 {
                     Console.WriteLine("Speler 1 wint, dolfijn 1 was als eerste over de finish");
                 }
-                else if (dolfijn2.Afstand >= 200 && dolfijn1.Afstand < dolfijn2.Afstand)
+                else if (dolfijn2.Afstand >= 120 && dolfijn1.Afstand < dolfijn2.Afstand)
                 {
                     Console.WriteLine("Speler 2 wint, dolfijn 2 was als eerste over de finish");
                 }
-                else if ((dolfijn2.Afstand >= 200) && (dolfijn1.Afstand >= 200))
+                else if ((dolfijn2.Afstand >= 120) && (dolfijn1.Afstand >= 120))
                 {
                     Console.WriteLine("Dolfijn 1 en dolfijn 2 zijn allebei gefinisht... iedereen wint");
                 }
@@ -120,13 +113,8 @@ namespace Main
                 {
                     Console.WriteLine("Beide dolfijnen zijn dood... niemand wint");
                 }
-
             }
             Console.ReadKey();
-
         }
     }
 }
-
-
-

@@ -1,19 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Main
+namespace Dolfijnenrace
 {
-
     class Dolfijn
     {
         public int Afstand =0 ;
         public int Luchtvoorraad =35;
-        public bool Dood;
 
-        Random randomNumb = new Random();
 
     public void Zwem()
     {
